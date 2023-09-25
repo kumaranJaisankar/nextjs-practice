@@ -1,0 +1,9 @@
+.image {
+  object-fit: cover;
+  margin: 0.25rem;
+  border-radius: 10px;
+}
+
+.unorderList {
+  list-style: none;
+}

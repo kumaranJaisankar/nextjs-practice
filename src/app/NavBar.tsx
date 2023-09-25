@@ -8,7 +8,6 @@ const NavBar = () => {
   const pathName = usePathname();
   return (
     <Navbar
-      data-bs-theme="dark"
       bg="primary"
       sticky="top"
       variant="dark"
@@ -49,6 +48,9 @@ const NavBar = () => {
                 Coading
               </NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link as={Link} href="/search" active={pathName === "/search"}>
+              Search
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

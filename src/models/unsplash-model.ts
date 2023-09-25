@@ -13,3 +13,7 @@ export interface Urls {
 export interface User {
   username: string;
 }
+
+export interface UnsplashSearchModel {
+  results: UnsplashModel[];
+}

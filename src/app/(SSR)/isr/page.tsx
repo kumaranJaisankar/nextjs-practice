@@ -1,9 +1,9 @@
 import { Alert } from "@/components/bootstarp";
-import { UnsplashModel } from "@/models/unsplash-model";
-import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { Metadata } from "next";
+import { UnsplashModel } from "@/models/unsplash-model";
 
 export const metadata: Metadata = {
   title: "Incremintal Static Regenration fetching -Nextjs Image Gallery ",
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 // export const revalidate = 0;
 
-const Isr = async () => {
+const page = async () => {
   const response = await fetch(
     "https://api.unsplash.com/photos/random?client_id=" +
       process.env.UNSPALSH_ACCESS_KEY,
@@ -42,4 +42,4 @@ const Isr = async () => {
   );
 };
 
-export default Isr;
+export default page;

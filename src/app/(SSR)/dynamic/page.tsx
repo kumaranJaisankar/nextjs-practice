@@ -1,4 +1,4 @@
-import { Alert } from "@/components/bootstarp";
+import { Alert, Spinner } from "@/components/bootstarp";
 import { UnsplashModel } from "@/models/unsplash-model";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -30,6 +30,8 @@ const Dynamic = async () => {
         refresh the page. you get new image from Unsplash API
       </Alert>
       <Image
+        blurDataURL={image.urls.raw}
+        placeholder="blur"
         src={image.urls.raw}
         width={width}
         height={height}

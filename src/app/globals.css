@@ -59,10 +59,10 @@ body {
 }
 
 a {
-  color: inherit;
+  /* color: inherit; */
   text-decoration: none;
 }
 
 img {
-  background-color: skyblue;
+  background-color: rgba(135, 207, 235, 0.427);
 }
